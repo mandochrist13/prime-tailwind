@@ -6,9 +6,9 @@
     <title>PrimePrompts</title>
     <script src="./cdn.js"></script>
 </head>
-<body class=" m-0 flex-col">
+<body class=" ">
 
-    <header class="mb-5 border-b-2 border-black flex py-3">
+    <header class="lg:mb-5 border-b-2 border-black flex py-3">
         <nav class=" w-full flex items-center justify-around">
             <!-- logo group -->
             <div class="flex justify-center gap-5">
@@ -17,46 +17,51 @@
                 <div class="logo-image"><img class="logo-haut" src="./assets/imgs/Logo.svg" alt="PrimePrompts"></div>
 
                  <!-- logo text -->
-                <div class=" ">
-                    <h1 class="text-3xl font-bold">PrimePrompts</h1>
+                <div class="items-center flex">
+                    <h1 class="lg:text-[20px] font-bold">PrimePrompts</h1>
                 </div>
                
             </div>
 
             <!-- bouton group -->
-            <div class="flex align-middle border-stone-950">
+            <div class="hidden lg:flex lg:items-center border-stone-950">
                 <!-- bouton 1 -->
                 <div class="w-32 h-11 bg-transparent items-center flex justify-center"> <button href="#" class="w-32 h-10 font-bold text-xl items-center justify-center flex bg-transparent border-transparent py-3 cursor-pointer">connexion</button></div>
 
                 <!-- bouton 2 -->
-                <div class="w-64 h-10 bg-transparent"> <button class="w-64 h-10 bg-black rounded-xl text-blue-600 cursor-pointer">Essayer PrimePrompt</button></div>
+                <div class="w-64 h-10 bg-transparent"> <button class="p-3 h-10 flex items-center bg-black rounded-xl text-white cursor-pointer">Essayer PrimePrompt</button></div>            
+            
             </div>
+
+
+            <img class="lg:hidden sm:w-7" src="./assets/imgs/pajamas_hamburger.svg" alt="">
             <!-- <div class=" "> <img  src="./char/Component 1.svg" alt=""></div>
             <div class=" "> <img  src="./char/Component 2.svg" alt=""></div> -->
         </nav>
     </header>  
-    <section class="flex justify-center w-100% ">
+    <section class="flex-col justify-center w-100% ">     
+        <!-- "flex justify-center w-100% " -->
         <!-- section a -->
         <div class="p-5 flex gap-5 mt-14 mb-16 justify-center items-center flex-col">
             <!-- titre -->
             <div class="">
-                <h1 class="bg-white w-96 text-center text-3xl">Organisez vos prompts IA rapidement, efficacement.</h1>
+                <h1 class="lg:w-[450px] w-[350px] sm:w-[500px] font-bold text-center text-[25px] lg:text-[35px] sm:text-[40px]">Organisez vos prompts IA rapidement, efficacement.</h1>
             </div>
 
             <!-- paragraph -->
-            <div class="paragraph-1">
-                <p class="text-center text-xl">Une application simple pour gérer et retrouver facilement vos prompts IA.</p>
+            <div class="lg:w-[450px] sm:w-[440px]">
+                <p class="text-center lg:text-xl sm:text-[20px]">Une application simple pour gérer et retrouver facilement vos prompts IA.</p>
             </div>
 
             <!-- bouton -->
             <div class="flex justify-center items-center">
-                <button class="w-52 h-11 bg-sky-500 text-white rounded-lg cursor-pointer">Essayez PrimePrompts</button>
+                <button class="w-52 h-11 bg-[#2085EF] text-white rounded-lg cursor-pointer">Essayez PrimePrompts</button>
             </div>
         </div>
     </section>
       
-    <div class="main flex justify-center align-middle gap-6 mt-16">
-        <aside class="bg-red-600 flex flex-col gap-3 w-80 h-48 p-5 rounded-lg">
+    <div class="main flex flex-col items-center lg:flex lg:flex-row lg:justify-center gap-6 mt-16">
+        <aside class="bg-[#E4073C] flex flex-col gap-3 sm:w-[600px] lg:w-80 w-80 h-48 p-5 rounded-lg">
             <!-- icon -->
             <div>
                 <img src="./assets/imgs/Icon.png" alt="">
@@ -71,7 +76,7 @@
             </div>
         </aside>
         
-        <aside class="bg-yellow-400 flex flex-col gap-3 w-80 h-48 p-5 rounded-lg">
+        <aside class="bg-[#FFD303] flex flex-col gap-3 sm:w-[600px] lg:w-80 w-80 h-48 p-5 rounded-lg">
             <!-- icon -->
             <div>
                 <img src="./assets/imgs/Icon2.png" alt="">
@@ -86,7 +91,7 @@
             </div>
         </aside>
 
-        <aside class="bg-green-600 flex flex-col gap-3 w-80 h-48 p-5 rounded-lg">
+        <aside class="bg-[#06E07F] flex flex-col gap-3 sm:w-[600px] lg:w-80 w-80 h-48 p-5 rounded-lg">
             <!-- icon -->
             <div>
                 <img src="./assets/imgs/Icon3.png" alt="">
@@ -104,38 +109,38 @@
     </div>
       
 
-    <footer class=" bg-black h-36 mt-36 flex justify-around placeholder pl-4 pr-4">
+    <footer class=" bg-black h-36 mt-36 sm:flex sm:flex-row lg:flex justify-around placeholder pt-4 pl-4 pr-4">
         <!-- footer links -->
-        <div class="flex gap-6 items-center">
+        <div class="justify-between sm:items-center flex lg:flex gap-6 items-center">
             <!-- link 1-->
-            <div>
-                <a class="text-cyan-50" href="">@2024 PrimePrompts Labs</a>
+            <div class="">
+                <a class="text-cyan-50 sm:text-[12px] lg:text-[15px] text-[9px]" href="">@2024 PrimePrompts Labs</a>
             </div>
 
             <!-- link 2-->
-            <div>
-                <a class="text-cyan-50" href="">Mentions légales</a>
+            <div class="">
+                <a class="text-cyan-50 sm:text-[12px]  lg:text-[15px] text-[9px]" href="">Mentions légales</a>
             </div>
-
+            
+            <div class="">
             <!-- link 3-->
-            <div>
-                <a class="text-cyan-50" href="">Politique de confidentialité</a>
+                <a class="text-cyan-50 sm:text-[12px]  lg:text-[15px] text-[9px]" href="">Politique de confidentialité</a>
             </div>
         </div>
 
         <!-- footer logo -->
-        <div class="align-middle justify-center flex flex-col">
+        <div class=" justify-center items-center flex flex-col">
             <!-- logo et texte -->
             <div class="flex justify-center items-center">
                 <!-- logo -->
                 <img class="logo-bas" src="./assets/imgs/Logo.svg" alt="">
 
                 <!-- texte logo -->
-                 <h1 class="text-cyan-50 text-xl font-bold">PrimePrompts</h1>
+                 <h1 class="text-cyan-50 lg:text-xl lg:font-bold">PrimePrompts</h1>
             </div>
 
             <!-- groupes icones -->
-            <div class="flex gap-7">
+            <div class="flex gap-7 lg:gap-7">
                 <!-- icone 1 -->
                 <div>
                     <img src="./assets/imgs/Facebook.png" alt="">
